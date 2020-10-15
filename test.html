@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark">
+<!-- 	<div class="col-sm-12 bg-primary">
+		<ul class="list-group">
+			<li class="list-group-item">Home</li>
+			<li class="list-group-item">Dapibus ac facilisis in</li>
+			<li class="list-group-item">Morbi leo risus</li>
+			<li class="list-group-item">Porta ac consectetur ac</li>
+			<li class="list-group-item">Vestibulum at eros</li>
+		  </ul>
+		test
+	</div>
+	<div class="col-md-8 bg-danger">
+		test
+	</div> -->
+	<!-- Image and text -->
+	<nav class="navbar navbar-light bg-dark shadow-sm">
+	  <a class="navbar-brand text-white" href="#">
+	    <img src="navbar.PNG" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+	    Zero-One IDE
+	  </a>
+	</nav>
+        <div class="container-fluid">
+	<div class="row">
+<!--
+		<div class="col-lg-2" style="text-decoration: none">
+			<ul class="list-group bg-dark">
+			<li class="list-group-item tablinks" onclick="openCity(event, 'Welcome')" id="defaultOpen">Inicio</li>
+                        <li class="list-group-item">Palabras reservadas
+				<ul style="text-decoration: none">
+					<li onclick="openCity(event, 'palabraReservada')">Palabras reservedas</li>
+					<li onclick="openCity(event, 'Save')">Operadores</li>
+					<li onclick="openCity(event, 'Print')">Comentario</li>
+                                        <li onclick="openCity(event, 'Print')">Signos de puntuación</li>
+				</ul>
+			</li>
+			<li class="list-group-item">File
+				<ul style="text-decoration: none">
+					<li onclick="openCity(event, 'File')">File</li>
+					<li onclick="openCity(event, 'Save')">Save</li>
+					<li onclick="openCity(event, 'Print')">Print</li>
+				</ul>
+			</li>
+			<li class="list-group-item">Edit
+				<ul>
+					<li onclick="openCity(event, 'UndoRedo')">Undo & Redo</li>
+					<li onclick="openCity(event, 'CutCopyPaste')">Cut, copy & paste</li>
+					<li onclick="openCity(event, 'Find')">Find</li>
+					<li onclick="openCity(event, 'Replace')">Replace</li>
+				</ul>
+			</li>
+			<li class="list-group-item">Run
+				<ul>
+					<li onclick="openCity(event, 'Lexical')">Lexical analizer</li>
+					<li onclick="openCity(event, 'Syntactic')">Syntactic</li>
+					<li onclick="openCity(event, 'Semantic')">Semantic</li>
+				</ul>
+			</li>
+		  </ul>
+		</div>-->
+		<div class="col-lg-10 bg-dark text-white ml-1" >
+			<div id="Welcome">
+			  <h3>Documentación de Zero-One IDE</h3>
+			  <!--<p>Zero-One IDE Manual. </p>-->
+			</div>
+                        
+                        <div id="palabraReservada" class="tabcontent">
+                            <h4>Tipos de datos</h4>
+                            <h6>Entero</h6>
+                            <p>El tipo de dato entero se declara usando <code>numb3r</code> </p>
+                            <p>Ejemplo: <br> <code>numb3r variable;</code><br><code>number var = 12;</code></p>
+                            
+                            <h6>Flotante</h6>
+                            <p>El tipo de dato flotante se declara usando <code>flo4t</code> </p>
+                            <p>Ejemplo: <br> <code>flo4t flotante;</code><br><code>flo4t decimal = 3,1416;</code></p>
+                            
+                            <h6>Cadena</h6>
+                            <p>Para escribir cadenas se utiliza <code>str1ng</code></p>
+                            <p>Ejemplo: <br> <code>str1ng cadena = "Soy una cadena";</code> </p>
+                            
+                            
+                            
+                            <h4>Condicionales</h4>
+                            <h6>Condición Si</h6>
+                            <p>Para declarar la condición si se utiliza <code>1f (<i>condición</i>)</code></p>
+                            <p>Ejemplo: <br> <code>1f (var > 2) <br>{ pr1nt("VAR es mayor que 2"); }</code></p>
+                            
+                            <h6>Condición Si no</h6>
+                            <p>Para declarar la condición si no, se utiliza <code>1f (<i>condición</i>) els3 </code></p>
+                            <p>Ejemplo: <br> <code>1f (edad > 17) <br>{ pr1nt("Mayor de edad"); } <br> els3 { pr1nt("Menor de edad"); }</code></p>
+                            
+                            <h6>Condición switch</h6>
+                            <p>Declaración de interruptor, es un tipo de mecanismo de control de selección utilizado para permitir que el valor de una variable o expresión cambie el flujo de control de la ejecución del programa mediante búsqueda </p>
+                            <p>Se utiliza <code>sw1tch (<i>identificador</i>) { <br> c4se <i>valor1</i>: <br> c4se <i>valor1</i>: <br> def4ult:  } </code></p>
+                            <p>Ejemplo: <code>sw1tch (fruta) { <br> c4se "mango": pr1nt("Mango"); <br> c4se "naranja": pr1nt( "Naranja"); <br> def4ult: pr1nt("Nada"); }</code></p>
+                            
+                            <h4>Ciclos condicionales</h4>
+                            <h6>Ciclo For</h6>
+                            <p>El bucle for es una estructura de control en programación en la que se puede indicar de antemano el número máximo de iteraciones</p>
+                            <p>Ejemplo: <br> <code>f0r (numb3r i = 0; i < 10; i = i + 1) { <br> pr1nt("Bucle para") <br>}</code></p>
+                            
+                            <h6>Ciclo While</h6>
+                            <p>El propósito es repetir un bloque de código mientras una condición se mantenga verdadera.</p>
+                            <p>Ejemplo: <code> wh1le (i < 10) {<br> pr1nt("Estoy en un while"); <br>}</code></p>
+                            
+                            <h4>Comentarios</h4>
+                            <h6>Comentario de una línea</h6>
+                            <p>Ejemplo: <code><br> # <i>Comentario de una línea</i></code></p>
+                            
+                            <h6>Comentario de muchas lineas</h6>
+                            <p>Ejemplo: <br> <code>#/ <i>Comentario de <br> muchas lineas</i> #/</code></p>
+                            
+                            <h6>And y Or</h6>
+                            <p>Ejemplo: <br> <code>1f (sexo == "hombre" 4nd edad >= 18) { <br> pr1nt("Aprobado"); <br> else { pr1nt("Desaprovado"); } }</code></p>
+                            
+                            <p>Ejemplo: <br> <code>1f (transporte == "taxi" 0r transporte == "publico") { <br> pr1nt("Me quedo en casa"); <br> else { pr1nt("Ok"); } }</code></p>
+                        </div>
+                    <!--
+			<div id="File" class="tabcontent">
+			  <h3>New File</h3>
+			  <p>To create a new file File > New File or Ctrl + N</p> 
+			  <h3>Open File</h3>
+			  <p>File > Open File and select the file what you wish</p>
+			  <h3>Close file</h3>
+			  <p>File > Close File or Ctrl + W</p>
+			</div>
+
+			<div id="Save" class="tabcontent">
+			  <h3>Save File</h3>
+			  <p>File > Save or Ctrl + S</p>
+			  <h3>Save As</h3>
+			  <p>File > Save As and select the directory what you wish.</p>
+			</div>
+
+			<div id="Print" class="tabcontent" >
+				<h3>Print</h3>
+				<p>It will print the currently text on text area.</p>
+			</div>
+
+			<div id="UndoRedo" class="tabcontent">
+				<h3>Undo</h3>
+				<p>Edit > Undo</p>
+			</div>
+
+			<div id="CutCopyPaste" class="tabcontent">
+				<h3>Redo</h3>
+				<p>Edit > Redo</p>
+			</div>
+
+			<div id="Find" class="tabcontent">
+				<h3>Find</h3>
+				<p>Edit > Find. A textbox will appear to type the word.</p>
+			</div>
+
+			<div id="Replace" class="tabcontent">
+				<h3>Edit > Replace. Two textbox will appear type the word what you want to replace then click replace button.</h3>
+				<p></p>
+			</div>
+
+			<div id="Lexical" class="tabcontent">
+				<h3>Lexical Analizer</h3>
+				<p>It will print the tokens of zero-one language.</p>
+			</div>
+
+			<div id="Syntactic" class="tabcontent">
+				<h3>Syntactic Analizer</h3>
+				<p>It will print the tokens of zero-one language.</p>
+			</div>
+
+			<div id="Semantic" class="tabcontent">
+				<h3>Semantic analizer</h3>
+				<p>It will print the tokens of zero-one language.</p>
+			</div>-->
+		</div>
+	</div>
+        </div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
+
